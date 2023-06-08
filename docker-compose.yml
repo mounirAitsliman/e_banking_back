@@ -15,10 +15,10 @@ services:
   mysqldb:
     container_name: mysqldb
     image: mysql:8.0.28
-    volumes:
-      -  /dockerdata/mysql:/var/lib/mysql
+#    volumes:
+#      -  /dockerdata/mysql:/var/lib/mysql
     ports:
       - 3307:5698
     environment:
-      MYSQL_DATABASE: ebanking
+      MYSQL_DATABASE: railway
       MYSQL_ROOT_PASSWORD: root

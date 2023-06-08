@@ -1,5 +1,5 @@
-.idea/
-*.iml
-*.iws
-.sonar/
-.sonarlint/
+#.idea/
+#*.iml
+#*.iws
+#.sonar/
+#.sonarlint/

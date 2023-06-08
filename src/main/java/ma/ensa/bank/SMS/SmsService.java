@@ -11,9 +11,9 @@ import org.springframework.stereotype.Service;
 public class SmsService {
 
     //twilio
-    public static final String ACCOUNT_SID = "ACee29398a4819ecd6e704046892ed2c36";
+/*    public static final String ACCOUNT_SID = "ACee29398a4819ecd6e704046892ed2c36";
     public static final String AUTH_TOKEN ="6f52bf71d814b7398256b6b789b0f3c1";
-    public static final String MY_NUMBER = "+12056513308";
+    public static final String MY_NUMBER = "+12056513308";*/
 
     //Vonage
     VonageClient client;
@@ -21,12 +21,12 @@ public class SmsService {
     public SmsService(){
         //initializing vonage api
         client = VonageClient.builder()
-                .apiKey("112d94a6")
-                .apiSecret("u8pI4HFQSyucFUJT")
+                .apiKey("1dbb84a2")
+                .apiSecret("BH6FH4NNR3t7ug7Q")
                 .build();
 
         //initializing twilio api
-        Twilio.init(ACCOUNT_SID, AUTH_TOKEN);
+        //Twilio.init(ACCOUNT_SID, AUTH_TOKEN);
     }
 
     public boolean sendSmsUsingVonageAPI(SmsEntity smsEntity) {
@@ -47,7 +47,7 @@ public class SmsService {
         }
     }
 
-    public boolean sendSmsUsingTwilioAPI(SmsEntity smsEntity){
+/*    public boolean sendSmsUsingTwilioAPI(SmsEntity smsEntity){
         try{
             Message message = Message.creator(
                             new com.twilio.type.PhoneNumber("+"+smsEntity.getSmsReceiver()),
@@ -60,5 +60,5 @@ public class SmsService {
             System.out.print(exception.getMessage());
             return false;
         }
-    }
+    }*/
 }

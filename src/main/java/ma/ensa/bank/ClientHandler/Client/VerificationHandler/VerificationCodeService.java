@@ -48,7 +48,7 @@ public class VerificationCodeService {
 
             SmsEntity smsEntity = new SmsEntity(smsReceiver,message,code);
 
-            boolean theMessageWasSent = smsService.sendSmsUsingTwilioAPI(smsEntity);
+            boolean theMessageWasSent = smsService.sendSmsUsingVonageAPI(smsEntity);
 
             if(theMessageWasSent == false){
                 throw new RuntimeException("There is something wrong with the sending message service");

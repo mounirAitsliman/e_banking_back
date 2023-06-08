@@ -39,13 +39,7 @@ public class BankBackApplication {
 		return args -> {
 
 
-			/*clientService.addClient(new Client(null,
-					"ahmed",
-				"zibout",
-				"0685412369",
-					"ahmed@gmail.com",
-					"15963",
-					150.6));*/
+
 			BackOffice backOffice = new BackOffice(null,
 					"office@gmail.com",
 					"123456",
@@ -55,9 +49,6 @@ public class BankBackApplication {
 					LocalDate.now(),null
 			);
 			backOfficeRepository.save(backOffice);
-
-		//	clientService.addClient(new ClientDTO(null, "zakaria", "dani","0606060606", "email@email.com", "789", "ta7nawt", LocalDate.of(2000,5,12),200.0,2L));
-		//	clientService.addClient(new ClientDTO(null, "marouane", "zibout","0606780606", "client@email.com", "789", "ta7nawt", LocalDate.of(2000,5,12),200.0,null));
 
 		};
 	}

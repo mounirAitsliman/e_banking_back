@@ -57,7 +57,7 @@ public class Client {
 
     }
 
-    public Client(String marouane, String zibout, String s, String s1, int i, String mahmid, int i1) {
+    public Client(String mounir, String sliman, String s, String s1, int i, String izdihar, int i1) {
 
     }
 }
